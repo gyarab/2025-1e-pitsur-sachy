@@ -7,7 +7,6 @@ import javafx.scene.layout.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
-
 import java.io.InputStream;
 import java.util.List;
 
@@ -28,10 +27,10 @@ public class JavaFXtirda extends Application {
 
         vykresliSachovnici();
 
-        // 🔝 info kdo je na tahu
+        // info kdo je na tahu
         root.setTop(turnLabel);
 
-        // 🔽 tlačítka dole
+        // tlačítka dole
         HBox menu = new HBox(10);
 
         Button reset = new Button("Reset");
@@ -67,7 +66,7 @@ public class JavaFXtirda extends Application {
 
         grid.getChildren().clear();
 
-        // 🔥 kdo je na tahu
+        // kdo je na tahu
         turnLabel.setText(sachovnice.bilyHraji ? "Tah: Bílý" : "Tah: Černý");
 
         for (int x = 0; x < 8; x++) {
@@ -80,12 +79,12 @@ public class JavaFXtirda extends Application {
 
                 String color = (x + y) % 2 == 0 ? "beige" : "brown";
 
-                // 🔵 vybraná figurka
+                // vybraná figurka
                 if (x == vybranyX && y == vybranyY) {
                     color = "lightblue";
                 }
 
-                // 🟢 možné tahy
+                // možné tahy
                 if (vybranyX != -1) {
                     Figurka vybrana = sachovnice.policko[vybranyX][vybranyY];
 
@@ -102,7 +101,7 @@ public class JavaFXtirda extends Application {
 
                 b.setStyle("-fx-background-color: " + color + ";");
 
-                // 🖼 obrázky
+                // obrázky
                 if (f != null) {
                     String path = "";
 
@@ -128,7 +127,7 @@ public class JavaFXtirda extends Application {
 
                 b.setOnAction(e -> {
 
-                    // 🔥 výběr pouze správné barvy
+                    //  výběr pouze správné barvy
                     if (vybranyX == -1) {
 
                         Figurka kliknuta = sachovnice.policko[fx][fy];
