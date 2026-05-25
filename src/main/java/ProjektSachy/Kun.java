@@ -1,3 +1,4 @@
+//Naprogramovanou autorem podle vzoru tridy Pesec.java a obcasna konzultace s ai
 package ProjektSachy;
 
 import java.util.ArrayList;
