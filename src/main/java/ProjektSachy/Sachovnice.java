@@ -1,3 +1,4 @@
+// Naprogramovano autorem s obcanou pomoci AI, enPassant vytvoren AI
 package ProjektSachy;
 
 import java.util.List;
