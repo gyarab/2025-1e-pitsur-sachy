@@ -1,3 +1,4 @@
+// Trida je plne vytvorena AI a upravena autorem(cesty k texturam)
 package ProjektSachy;
 
 import javafx.application.Application;
