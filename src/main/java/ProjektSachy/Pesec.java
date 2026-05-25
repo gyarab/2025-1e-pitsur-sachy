@@ -1,3 +1,4 @@
+//Plne vygenrovano AI
 package ProjektSachy;
 
 import java.util.ArrayList;
