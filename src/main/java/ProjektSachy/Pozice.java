@@ -1,3 +1,4 @@
+//Naprogramovano autorem
 package ProjektSachy;
 
 public class Pozice {
