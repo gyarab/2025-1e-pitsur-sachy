@@ -1,4 +1,4 @@
-//Naprogramovanou autorem podle vzoru tridy Pesec.java.
+
 // Cast Autora.................................................................................................................\
 package ProjektSachy;
 
