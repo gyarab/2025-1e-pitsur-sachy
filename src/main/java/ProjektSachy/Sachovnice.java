@@ -1,4 +1,5 @@
-// Naprogramovano autorem s obcanou pomoci AI, enPassant vytvoren AI
+// Naprogramovano autorem s obcanou pomoci AI
+// Cast Autora................................................................................................................................................................................\
 package ProjektSachy;
 
 import java.util.List;
@@ -8,10 +9,10 @@ public class Sachovnice {
     public Figurka [][] policko = new Figurka[8][8];
 
     public boolean bilyHraji = true;
-
+// Ai Cast......................................................................................................................................
     public int enPassantX = -1;
     public int enPassantY = -1;
-
+// Cast Autora.......................................................................................................................................
     public Sachovnice(){
 
 
@@ -86,7 +87,7 @@ public class Sachovnice {
             // provedeni tahu natvrdo
             policko[x2][y2] = f;
             policko[x1][y1] = null;
-
+// Ai Cast......................................................................................................................................
             // en passant sebrani
             if (f instanceof Pesec) {
                 if (y1 != y2 && cil == null) {
@@ -97,7 +98,7 @@ public class Sachovnice {
             // reset en passant
             enPassantX = -1;
             enPassantY = -1;
-
+// Cast Autora.....................................................................................................................................................
             // nastaveni ze se figurka pohnula
             if (f instanceof Kral) {
                 ((Kral) f).pohnulSe = true;
@@ -124,7 +125,7 @@ public class Sachovnice {
                     policko[x1][0] = null;
                 }
             }
-
+// Ai Cast..................................................................................................................................
             // nastaveni en passant
             if (f instanceof Pesec) {
                 if (Math.abs(x2 - x1) == 2) {
@@ -139,7 +140,7 @@ public class Sachovnice {
                     policko[x2][y2] = new Dama(f.jeBila);
                 }
             }
-
+// Cast Autora................................................................................................................................................
             // zmena hrace
             bilyHraji = !bilyHraji;
 
@@ -186,7 +187,7 @@ public class Sachovnice {
 
         return false;
     }
-
+// Ai cast.....................................................................................................................................................................................................
     public boolean maNekdoTah(boolean bila) {
 
         for (int i = 0; i < 8; i++) {
@@ -220,7 +221,7 @@ public class Sachovnice {
 
         return false;
     }
-
+// Cast Autora.................................................................................................................................................................................
     public boolean jeMat(boolean bila) {
         return jeSach(bila) && !maNekdoTah(bila);
     }
