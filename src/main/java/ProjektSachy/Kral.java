@@ -1,4 +1,4 @@
-//Naprogramovanou autorem podle vzoru tridy Pesec.java a obcasna konzultace s ai
+//Naprogramovano autorem podle vzoru tridy Pesec.java
 package ProjektSachy;
 
 import java.util.ArrayList;
@@ -32,7 +32,7 @@ public class Kral extends Figurka {
                 }
             }
         }
-
+        
         //  ROSADA
         if (!this.pohnulSe) {
 
