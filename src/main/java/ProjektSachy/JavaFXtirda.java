@@ -1,4 +1,5 @@
 // Trida je plne vytvorena AI a upravena autorem(cesty k texturam)
+// Ai cast prace.....................................................................................................................................................................................................................................
 package ProjektSachy;
 
 import javafx.application.Application;
@@ -105,14 +106,14 @@ public class JavaFXtirda extends Application {
                 // obrázky
                 if (f != null) {
                     String path = "";
-
+// Cast autora ................................................................................................................................................................................................................................................................................
                     if (f instanceof Pesec) path = f.jeBila ? "BilyPesec.png" : "CernyPesec.png";
                     if (f instanceof Vez) path = f.jeBila ? "BilaVez.png" : "CernaVez.png";
                     if (f instanceof Kun) path = f.jeBila ? "BilyKun.png" : "CernyKun.png";
                     if (f instanceof Strelec) path = f.jeBila ? "BilyStrelec.png" : "CernyStrelec.png";
                     if (f instanceof Dama) path = f.jeBila ? "BilaKralovna.png" : "CernaKralovna.png";
                     if (f instanceof Kral) path = f.jeBila ? "BilyKral.png" : "CernyKral.png";
-
+// Ai cast ........................................................................................................................................................................................................................................................................................
                     InputStream is = getClass().getResourceAsStream("/textury/" + path);
 
                     if (is != null) {
